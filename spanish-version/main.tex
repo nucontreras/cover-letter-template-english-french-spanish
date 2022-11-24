@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\geometry{vmargin={3cm, 2.5cm}}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+
+\usepackage[T1]{fontenc}
+\setlength\parskip{10pt}
+\setlength\parindent{0pt}
+
+%------------------------------------------------------%
+%                        Variables                        
+%------------------------------------------------------%
+
+\newcommand\autor{Nombre Apellido}
+\newcommand\datation{Hecho en NombreCiudad, el \today}
+\newcommand\objetivo{Postulación al puesto de ...}
+\newcommand\midireccion{11 MiDirección}
+\newcommand\codigopostalyciudad{99999 Ciudad}
+\newcommand\email{\href{mailto:email@email.com}{\texttt{email@email.com}}}
+
+\newcommand\empresadestinataria{\textbf{EMPRESA}}
+\newcommand\direccionempresa{3 DirecciónDeLaEmpresa}
+\newcommand\ciudadcodigopostalpaysempresa{Ciudad, Ciudad 88888, País}
+%\newcommand\name{}
+
+
+%------------------------------------------------------%
+%                    Fin variables                        
+%------------------------------------------------------%
+
+
+\begin{document}
+\pagestyle{empty}
+
+\textbf{\autor}\\
+\midireccion\\
+\codigopostalyciudad\\
+\email\\
+
+\begin{flushright}
+\empresadestinataria\\
+\direccionempresa\\
+\ciudadcodigopostalpaysempresa\\
+\end{flushright}
+
+\datation\\
+\par\bigskip\textbf{Objetivo: \objetivo}\\
+
+
+
+%------------------------------------------------------%
+%                        Body                        
+%------------------------------------------------------%
+
+Estimado Sr./Sra.,
+
+
+\lipsum[1-2]
+
+
+%------------------------------------------------------%
+%                        End body 
+%------------------------------------------------------%
+
+\bigskip
+\begin{flushright}
+	\autor\\
+\end{flushright}
+
+
+\begin{figure}[h]
+  \raggedleft
+  \includegraphics[scale=0.2]{firma/firma-template.png}
+\end{figure}
+
+\end{document}

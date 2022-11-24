@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\geometry{vmargin={3cm, 2.5cm}}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+
+\usepackage[T1]{fontenc}
+\setlength\parskip{10pt}
+\setlength\parindent{0pt}
+
+%------------------------------------------------------%
+%                        Variables                        
+%------------------------------------------------------%
+
+\newcommand\authorcl{Name Surname}
+\newcommand\datation{City, \today}
+\newcommand\objet{Application for the post of ...}
+\newcommand\mondirection{1 StreetName}
+\newcommand\codepostaletville{99999 City}
+\newcommand\email{\href{mailto:email@email.com}{\texttt{email@email.com}}}
+
+\newcommand\entreprisedestinataire{\textbf{ENTERPRISE}}
+\newcommand\directionentreprise{3 EnterpriseStreet}
+\newcommand\entreprisevillecodepostalpays{City, City 88888, Country}
+%\newcommand\name{}
+
+
+%------------------------------------------------------%
+%                    End variables                        
+%------------------------------------------------------%
+
+
+\begin{document}
+\pagestyle{empty}
+
+\textbf{\authorcl}\\
+\mondirection\\
+\codepostaletville\\
+\email\\
+
+\begin{flushright}
+\entreprisedestinataire\\
+\directionentreprise\\
+\entreprisevillecodepostalpays\\
+\end{flushright}
+
+\datation\\
+\par\bigskip\textbf{Objective: \objet}\\
+
+
+
+%------------------------------------------------------%
+%                        Body                        
+%------------------------------------------------------%
+
+Monsieur, Madame, 
+
+
+
+\lipsum[1-2]
+
+
+
+%------------------------------------------------------%
+%                        End body 
+%------------------------------------------------------%
+
+\bigskip
+\begin{flushright}
+	\authorcl\\
+\end{flushright}
+
+
+\begin{figure}[h]
+  \raggedleft
+  \includegraphics[scale=0.2]{signature/signature-template.png}
+\end{figure}
+
+\end{document}

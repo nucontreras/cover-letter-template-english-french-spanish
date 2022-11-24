@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[french]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[a4paper]{geometry}
+\geometry{vmargin={3cm, 2.5cm}}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} 
+
+\usepackage[T1]{fontenc}
+\setlength\parskip{10pt}
+\setlength\parindent{0pt}
+
+%------------------------------------------------------%
+%                        Variables                        
+%------------------------------------------------------%
+
+\newcommand\authorlm{Prenom NOM}
+\newcommand\datation{Fait à NomVille, le \today}
+\newcommand\objet{Candidature au poste d'qqch}
+\newcommand\mondirection{1 Rue NomDeLaRue}
+\newcommand\codepostaletville{99999 Ville}
+\newcommand\email{\href{mailto:email@email.fr}{\texttt{email@email.fr}}}
+
+\newcommand\entreprisedestinataire{\textbf{ENTREPRISE}}
+\newcommand\directionentreprise{3 RueDeLaEntreprise}
+\newcommand\entreprisevillecodepostalpays{Ville, Ville 88888, France}
+%\newcommand\name{}
+
+
+%------------------------------------------------------%
+%                    Fin variables                        
+%------------------------------------------------------%
+
+
+\begin{document}
+\pagestyle{empty}
+
+\textbf{\authorlm}\\
+\mondirection\\
+\codepostaletville\\
+\email\\
+
+\begin{flushright}
+\entreprisedestinataire\\
+\directionentreprise\\
+\entreprisevillecodepostalpays\\
+\end{flushright}
+
+\datation\\
+\par\bigskip\textbf{Objet: \objet}\\
+
+
+
+%------------------------------------------------------%
+%                        Body                        
+%------------------------------------------------------%
+
+Monsieur, Madame, 
+
+
+
+\lipsum[1-2]
+
+
+
+%------------------------------------------------------%
+%                        End body 
+%------------------------------------------------------%
+
+\bigskip
+\begin{flushright}
+	\authorlm\\
+\end{flushright}
+
+
+\begin{figure}[h]
+  \raggedleft
+  \includegraphics[scale=0.2]{signature/signature-template.png}
+\end{figure}
+
+\end{document}
